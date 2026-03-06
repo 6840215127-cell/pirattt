@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ตัวอย่างเว็บไซต์ที่รองรับ Accessibility</title>
+
+<style>
+
+body{
+font-family: Arial, sans-serif;
+line-height:1.6;
+background:#ffffff;
+color:#000000;
+margin:0;
+}
+
+header{
+background:#003366;
+color:white;
+padding:20px;
+}
+
+nav{
+background:#eeeeee;
+padding:10px;
+}
+
+nav a{
+margin-right:15px;
+text-decoration:none;
+color:#003366;
+font-weight:bold;
+}
+
+nav a:focus{
+outline:3px solid orange;
+}
+
+main{
+padding:20px;
+}
+
+img{
+max-width:100%;
+}
+
+button{
+padding:10px 15px;
+font-size:16px;
+cursor:pointer;
+}
+
+footer{
+background:#003366;
+color:white;
+text-align:center;
+padding:15px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<a href="#maincontent">ข้ามไปยังเนื้อหาหลัก</a>
+
+<header>
+<h1>แพลตฟอร์มดิจิทัลเพื่อการเรียนรู้</h1>
+<p>ตัวอย่างเว็บไซต์ที่ออกแบบให้รองรับ Accessibility</p>
+</header>
+
+<nav aria-label="เมนูหลัก">
+<a href="#home">หน้าแรก</a>
+<a href="#services">บริการ</a>
+<a href="#contact">ติดต่อ</a>
+</nav>
+
+<main id="maincontent">
+
+<section id="home">
+<h2>เกี่ยวกับเว็บไซต์</h2>
+
+<p>
+เว็บไซต์ตัวอย่างนี้แสดงแนวทางการออกแบบเว็บที่รองรับการเข้าถึงของผู้ใช้งานทุกกลุ่ม
+เช่น ผู้พิการทางสายตา ผู้สูงอายุ และผู้ใช้งานที่ใช้ Screen Reader
+</p>
+
+<img src="gg.jpg" width="572" height="374" 
+alt="นักศึกษากำลังใช้คอมพิวเตอร์เพื่อเรียนรู้แพลตฟอร์มดิจิทัลในห้องเรียน">
+
+</section>
+
+<section id="services">
+
+<h2>บริการของเรา</h2>
+
+<article>
+
+<h3>คอร์สเรียนออนไลน์</h3>
+<p>เรียนรู้เกี่ยวกับเทคโนโลยีเว็บและแพลตฟอร์มดิจิทัล</p>
+
+</article>
+
+<article>
+
+<h3>บทความความรู้</h3>
+<p>บทความเกี่ยวกับการพัฒนาเว็บไซต์และ Accessibility</p>
+
+</article>
+
+</section>
+
+<section id="video">
+
+<h2>วิดีโอแนะนำหลักสูตร</h2>
+
+<video controls width="400">
+
+<source src="Download.mp4" type="video/mp4">
+
+<track
+src="subtitle-th.vtt"
+kind="subtitles"
+srclang="th"
+label="Thai">
+
+</video>
+
+</section>
+
+<section id="contact">
+
+<h2>ติดต่อเรา</h2>
+
+<form>
+
+<label for="name">ชื่อ</label><br>
+<input type="text" id="name" name="name"><br><br>
+
+<label for="email">อีเมล</label><br>
+<input type="email" id="email" name="email"><br><br>
+
+<label for="message">ข้อความ</label><br>
+<textarea id="message" name="message"></textarea><br><br>
+
+<button type="submit">ส่งข้อความ</button>
+
+</form>
+
+</section>
+
+</main>
+
+<footer>
+
+<p>© 2026 Digital Platform Learning</p>
+
+</footer>
+
+</body>
+
+</html>
